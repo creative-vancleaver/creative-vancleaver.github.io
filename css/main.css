@@ -209,6 +209,10 @@ a {
   text-align: center;
 }
 
+.footer .social-list {
+  margin: 1em 0 0;
+}
+
 .social-list > li {
   display: inline-block;
   margin: 0 0.5em;

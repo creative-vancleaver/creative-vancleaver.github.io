@@ -48,6 +48,11 @@ a img {
 
 /* GLOBAL STYLE */
 
+html {
+  box-shadow: 0 0 0 30px #000000 inset;
+  padding: 0 30px;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -70,6 +75,35 @@ a {
 }
 
 /* HEADER STYLES */
+.header {
+  background-color: #000000;
+  color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+.header-logo {
+  background-color: #000000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  left: -30px;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  width: 10vh;
+}
+
+.header-logo:hover,
+.header-logo:active {
+  background-color: #ed6e2f;
+}
+
+.header-logo img {
+  width: 4.3vh;
+}
+
 .header-nav {
   float: right;
   padding: 5.5vh 60px 0 0;
@@ -80,9 +114,25 @@ a {
   margin-left: 1em;
 }
 
-.header-nav > li + li {
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 1em;
+}
+
+.header-nav a {
+  color: #ffffff;
+}
+
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #ed6e2f;
 }
 
 .header-nav > li:first-child a {
@@ -90,31 +140,44 @@ a {
 }
 
 .header-nav > li:first-child a:hover {
-  color: #000000;
-}
-
-.header-nav a {
-  color: #000000;
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.header-nav a:hover,
-.header-nav a:active {
-  color: #ed6e2f;
-}
-
-.header-logo:hover,
-.header-logo:active {
-  color: #ed6e2f;
+  color: #ffffff;
 }
 
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
+}
+
+/* FOOTER STYLES */
+
+.footer {
+  background-color: #000000;
+  padding: 10vh 0 15vh;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 50px;
+}
+
+.footer h3 {
+  color: #ffffff;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+
+.footer h3 span {
+  color: #aaaaaa;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+
+.footer-nav a {
+  color: #cccccc;
 }
 
 /* SOCIAL STYLES */

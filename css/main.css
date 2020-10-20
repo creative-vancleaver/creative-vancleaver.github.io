@@ -252,11 +252,11 @@ a {
 .page h1 {
   font-size: 3em;
   margin-bottom: 1em;
-  text-align: center:
+  text-align: center;
 }
 
 .page h2 {
-  margin-bottom: 0.5em:
+  margin-bottom: 0.5em;
 }
 
 .page h4 {
@@ -322,7 +322,7 @@ a {
   color: #ffffff;
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: bold;
   height: 2.5em;
   line-height: 1;
@@ -363,6 +363,20 @@ a {
 .home-section h2 {
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.home-section h4 {
+  margin-bottom: 0.75em;
+  text-align: center;
+}
+
+.home-section .post-header {
+  text-align: center;
+}
+
+.home-section .blog-posts {
+  margin: auto;
+  width: 75%;
 }
 
 .home-callout {
@@ -501,7 +515,7 @@ a {
 }
 
 .blog-posts ~ .blog-posts {
-  border-top: 1px dotted rgba (0, 0, 0, 0.1);
+  border-top: 1px dotted rgba(0, 0, 0, 0.1);
   margin-top: 4em;
   padding-top: 4em;
 }
@@ -531,4 +545,54 @@ a {
   background-size: cover;
   height: 6em;
   margin-bottom: 1.5em;
+}
+
+.recent span {
+  margin-bottom: 0.5em;
+}
+
+.post {
+  width: 100%
+}
+
+.post-content,
+.post-footer {
+  margin: auto;
+  max-width: 40em;
+  width: 85vw;
+}
+
+.pull-left {
+  float: left;
+  margin: 2em 2em 2em -2%;
+}
+
+.pull-right {
+  float: right;
+  margin: 2em -2% 2em 2em;
+}
+
+.post-aside {
+  background-color: rgba(0, 0, 0, 0.01);
+  float: right;
+  margin: 0 0 2em 2em;
+  padding: 2em;
+}
+
+.post .post-header {
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+
+.post-content {
+  font-size: 1.1rem;
+}
+
+.post-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: 3em;
+  padding: 2em;
+  text-align: center;
 }
